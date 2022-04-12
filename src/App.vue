@@ -3,28 +3,60 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view/>
+  <transition name="fade" mode="out-in"> 
+    <router-view/>
+  </transition>
 </template>
 
 <style lang="scss">
 #app {
+  display: flex;
+  flex-direction: column;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100%;
+}
+html {
+  background: #15202b;
+  height: 100%;
+}
+body {
+  margin: 0px;
+  height: 100%;
+}
+a {
+  color: #e22c78;
+  
+}
+title {
+  font-size: 20pt;
+  color: #e22c78;
 }
 
 nav {
   padding: 30px;
-
+  position: static;
   a {
     font-weight: bold;
     color: #2c3e50;
-
     &.router-link-exact-active {
-      color: #42b983;
+      color: #e22c78;
     }
   }
 }
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: opacity 0.25s ease;
+}
+.fade-leave {}
+.fade-leave-active {
+  transition: opacity 0.25s ease;
+  opacity: 0;
+}
+
 </style>
