@@ -34,7 +34,7 @@ export default defineComponent({
     background: rgba($color: #ffffff, $alpha: 0.05);
     border-radius: $default-border-radius;
     padding: 20px;
-    margin: 10px 20px;
+    margin: 10px;
     min-width: 40vw;
     min-height: 20vh;
     .description {
