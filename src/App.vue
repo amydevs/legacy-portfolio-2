@@ -9,14 +9,15 @@
 </template>
 
 <style lang="scss">
+@import "@/variables.scss";
+
 #app {
   display: flex;
   flex-direction: column;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: #7f94a8;
   height: 100%;
 }
 html {
@@ -28,22 +29,23 @@ body {
   height: 100%;
 }
 a {
-  color: #e22c78;
+  color: $accent-color;
   
 }
-title {
+.title {
+  color: $accent-color;
   font-size: 20pt;
-  color: #e22c78;
 }
 
 nav {
+  text-align: center;
   padding: 30px;
   position: static;
   a {
     font-weight: bold;
     color: #2c3e50;
     &.router-link-exact-active {
-      color: #e22c78;
+      color: $accent-color;
     }
   }
 }

@@ -1,15 +1,18 @@
 <template>
   <div class="social">
-      <a v-for="(link, i) in links" :href="link.link" :key="i"><span :class="`mdi ${link.icon}`"/>{{ link.name }}</a>
+      <IconButton v-for="(link, i) in links" :href="link.link" :icon="link.icon" :text="link.name" :key="i" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import '@mdi/font/css/materialdesignicons.css';
+import IconButton from '@/components/IconButton.vue'
 
 export default defineComponent({
   name: 'Social',
+  components: {
+    IconButton
+  },
   props: {
     msg: String
   },
@@ -17,7 +20,6 @@ export default defineComponent({
     return {
       links: [
         new SocialLink('Github', 'https://github.com/jy1263/', 'mdi-github'),
-        new SocialLink('Twitter', 'https://twitter.com/jy126orjy126', 'mdi-twitter'),
         new SocialLink('This Repository', 'https://github.com/jy1263/jy1263.github.io', 'mdi-github'),
         new SocialLink('Spotify', 'https://open.spotify.com/artist/15HdoPMP89EsIfIvN1coko?si=pyuDsYIpRcu2AHDYVYIn-Q', 'mdi-spotify'),
         new SocialLink('Bandcamp', 'https://ayanamy.bandcamp.com/', 'mdi-bandcamp'),
@@ -46,6 +48,8 @@ class SocialLink {
 </script>
 
 <style lang="scss" scoped>
+@import "@/variables.scss";
+
 .social {
   display: flex;
   flex-wrap: wrap;
@@ -54,19 +58,6 @@ class SocialLink {
   text-align: center;
   margin-top: 8px;
   margin-bottom: 8px;
-  & a {
-    border-radius: 8px;
-    border: 0px;
-    padding: 5px 15px;
-    margin: 4px;
-    overflow-wrap: none;
-    font-size: 15pt;
-    background: rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    text-decoration: none;
-    & .mdi {
-      margin-right: 4px;
-    }
-  }
+  gap: 8px;
 }
 </style>

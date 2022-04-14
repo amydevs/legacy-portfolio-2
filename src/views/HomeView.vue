@@ -11,13 +11,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import Social from '@/components/Social.vue';
 
 export default defineComponent({
   name: 'HomeView',
   components: {
-    HelloWorld,
     Social
   },
 });
@@ -35,9 +33,8 @@ export default defineComponent({
     align-items: center;
     justify-content: space-around;
     .title {
-      color: #e22c78;
       margin: 8px;
-      font-size: 20pt;
+      text-align: center;
     }
     .pfp {
       max-height: 50vh;
