@@ -1,12 +1,25 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <template v-for="(route, i) in routes" :key="i">
+      <router-link :to="route.path">{{route.name}}</router-link>
+      {{ i === routes.length - 1 ? '' : ' | ' }}
+    </template>
   </nav>
   <transition name="fade" mode="out-in"> 
     <router-view/>
   </transition>
 </template>
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  computed: {
+    routes: function() {
+      return this.$router.options.routes;
+    }
+  }
+})
+</script>
 
 <style lang="scss">
 @import "@/variables.scss";
