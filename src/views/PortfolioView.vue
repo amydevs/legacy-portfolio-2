@@ -14,7 +14,7 @@ import { ProjectCardProps } from '@/types/ProjectCardProps'
 import Donut from '@/components/Donut.vue';
 
 export default defineComponent({
-  name: 'AboutView',
+  name: 'PortfolioView',
   components: {
     ProjectCard,
     Donut

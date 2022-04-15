@@ -5,9 +5,14 @@
       {{ i === routes.length - 1 ? '' : ' | ' }}
     </template>
   </nav>
-  <transition name="fade" mode="out-in"> 
-    <router-view/>
-  </transition>
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in"> 
+      <keep-alive>
+        <component :is="Component" />
+      </keep-alive>
+    </transition>
+  </router-view>
+
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
