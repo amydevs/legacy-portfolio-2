@@ -38,9 +38,10 @@ export default defineComponent({
     }
     .pfp {
       max-height: 50vh;
-      max-width: 50vh;
+      max-width: 100%;
       width: auto;
       overflow: hidden;
+      flex-shrink: 1;
       border-radius: 100%;
       margin: 8px;
     }
