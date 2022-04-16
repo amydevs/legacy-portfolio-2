@@ -37,13 +37,18 @@ export default defineComponent({
       text-align: center;
     }
     .pfp {
+      min-width: 0;
+
       max-height: 50vh;
       max-width: 100%;
       width: auto;
       overflow: hidden;
-      flex-shrink: 1;
       border-radius: 100%;
       margin: 8px;
+
+      flex-grow: 1;
+      flex-basis: 0;
+      flex-shrink: 1;
     }
   }
 }
