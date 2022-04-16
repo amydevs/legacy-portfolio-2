@@ -94,9 +94,6 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .about {
-  height: 100%;
-  flex: 1;
-
   .projcontainer {
     width: 100%;
     flex-wrap: wrap;

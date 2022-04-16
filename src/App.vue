@@ -5,7 +5,7 @@
       {{ i === routes.length - 1 ? '' : ' | ' }}
     </template>
   </nav>
-  <router-view v-slot="{ Component }">
+  <router-view v-slot="{ Component }" id="router-render">
     <transition name="fade" mode="out-in"> 
       <keep-alive>
         <component :is="Component" />
@@ -36,7 +36,10 @@ export default defineComponent({
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #7f94a8;
-  height: 100%;
+  min-height: 100%;
+  > #router-render {
+    flex-grow: 1;
+  }
 }
 html {
   background: #15202b;
