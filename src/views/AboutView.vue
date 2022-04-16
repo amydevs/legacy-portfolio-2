@@ -1,5 +1,7 @@
 <template>
-    <div v-html="markdown"></div>
+    <div class="wrapper">
+        <div v-html="markdown" />
+    </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
@@ -18,7 +20,14 @@ export default defineComponent({
 })
 </script>
 <style lang="scss" scoped>
-    div {
-        padding: 10px 10vw;
+@import "@/variables.scss";
+
+.wrapper {
+    padding: 0px 10vw 10px 10vw;
+    > div {
+        padding: 3px 0px 15px 0px;
+        border-radius: $default-border-radius;
+        background: rgba($color: #ffffff, $alpha: 0.05);
     }
+}
 </style>
