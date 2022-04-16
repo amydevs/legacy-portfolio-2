@@ -22,7 +22,7 @@ export default defineComponent({
         new SocialLink('Github', 'https://github.com/jy1263/', 'mdi-github'),
         new SocialLink('This Repository', 'https://github.com/jy1263/jy1263.github.io', 'mdi-github'),
         new SocialLink('Spotify', 'https://open.spotify.com/artist/15HdoPMP89EsIfIvN1coko?si=pyuDsYIpRcu2AHDYVYIn-Q', 'mdi-spotify'),
-        new SocialLink('Bandcamp', 'https://ayanamy.bandcamp.com/', 'mdi-bandcamp'),
+        new SocialLink('Bandcamp', 'https://ayanamy.bandcamp.com/', 'mdi-music-circle'),
         new SocialLink('Matter Music', 'https://app.matter.online/artists/@ayanamy', 'mdi-music-circle'),
         new SocialLink('Soundcloud', 'https://soundcloud.com/owotter', 'mdi-soundcloud'),
         new SocialLink('Wip Soundcloud', 'https://soundcloud.com/owotterwip', 'mdi-soundcloud'),
