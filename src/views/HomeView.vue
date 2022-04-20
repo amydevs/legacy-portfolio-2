@@ -37,7 +37,8 @@ export default defineComponent({
       text-align: center;
     }
     .pfp {
-      min-width: 0;
+      min-width: 100px;
+      min-height: 100px;
 
       max-height: 50vh;
       max-width: 100%;
