@@ -25,8 +25,9 @@ export default defineComponent({
         new SocialLink('Bandcamp', 'https://ayanamy.bandcamp.com/', 'mdi-music-circle'),
         new SocialLink('Matter Music', 'https://app.matter.online/artists/@ayanamy', 'mdi-music-circle'),
         new SocialLink('Soundcloud', 'https://soundcloud.com/owotter', 'mdi-soundcloud'),
-        new SocialLink('Wip Soundcloud', 'https://soundcloud.com/owotterwip', 'mdi-soundcloud'),
-        new SocialLink("If it isn't clear enough", 'https://www.youtube.com/watch?v=ucbx9we6EHk', 'mdi-youtube')
+        new SocialLink('WIP Soundcloud', 'https://soundcloud.com/owotterwip', 'mdi-soundcloud'),
+        new SocialLink("If it isn't clear enough", 'https://www.youtube.com/watch?v=ucbx9we6EHk', 'mdi-youtube'),
+        new SocialLink("Pronouns", 'https://pronouns.page/u/AyanAmy', 'mdi-face-woman-profile')
       ] as SocialLink[]
     }
   },
