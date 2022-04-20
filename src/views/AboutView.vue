@@ -25,9 +25,14 @@ export default defineComponent({
 .wrapper {
     padding: 0px 10vw 10px 10vw;
     > div {
-        padding: 3px 0px 15px 0px;
+        padding: 3px 10px 15px 10px;
         border-radius: $default-border-radius;
         background: rgba($color: #ffffff, $alpha: 0.05);
     }
+}
+
+::v-deep img {
+   max-height: 100%;
+   max-width: 100%; 
 }
 </style>
