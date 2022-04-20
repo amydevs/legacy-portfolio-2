@@ -31,7 +31,7 @@ export default defineComponent({
     }
 }
 
-::v-deep img {
+::v-deep(img) {
    max-height: 100%;
    max-width: 100%; 
 }
