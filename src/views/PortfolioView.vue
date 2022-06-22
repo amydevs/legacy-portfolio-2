@@ -82,6 +82,22 @@ export default defineComponent({
             }
           ]
         },
+        {
+          title: "Exalta Launcher",
+          description: "A third-party open-source launcher built in Rust for Realm of the Mad God Exalted.",
+          actions: [
+            {
+              text: "GitHub",
+              href: "https://github.com/jy1263/exalta",
+              icon: "mdi-github"
+            },
+            {
+              text: "Download",
+              href: "https://github.com/jy1263/exalta/releases/latest",
+              icon: "mdi-download"
+            }
+          ]
+        }
       ] as ProjectCardProps[]
     }
   },
