@@ -56,11 +56,6 @@ export default defineComponent({
           "text": "WIP Soundcloud"
         },
         {
-          "href": "https://www.youtube.com/watch?v=ucbx9we6EHk",
-          "icon": "mdi-youtube",
-          "text": "If it isn't clear enough"
-        },
-        {
           "href": "https://pronouns.page/u/AyanAmy",
           "icon": "mdi-face-woman-profile",
           "text": "Pronouns"
